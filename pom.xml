@@ -12,6 +12,7 @@
         <module>smartatone-parent</module>
         <module>smartatone-common</module>
         <module>smartatone-test-web</module>
+        <module>smartatone-practice</module>
     </modules>
 
     <packaging>pom</packaging>
