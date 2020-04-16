@@ -12,8 +12,10 @@
 
     <artifactId>smartatone-practice</artifactId>
     <packaging>pom</packaging>
+
     <modules>
         <module>smartatone-practice-spring</module>
+        <module>smartatone-practice-three-party</module>
     </modules>
 
 
