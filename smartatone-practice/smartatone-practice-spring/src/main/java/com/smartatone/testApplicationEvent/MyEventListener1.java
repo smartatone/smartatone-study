@@ -7,10 +7,10 @@ import org.springframework.context.ApplicationListener;
  * @Description: 自定义Listener
  * @create 2020-04-16 21:43
  **/
-public class MyEventListener implements ApplicationListener<MyEvent> {
+public class MyEventListener1 implements ApplicationListener<MyEvent> {
 
     @Override
     public void onApplicationEvent(MyEvent event) {
-        System.out.println(event.getName());
+        System.out.println("MyEventListener1 " + event.getName());
     }
 }

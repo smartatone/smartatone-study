@@ -4,7 +4,8 @@
            http://www.springframework.org/schema/beans   http://www.springframework.org/schema/beans/spring-beans.xsd
        ">
 
-    <bean id="myEventListener" class="com.smartatone.testApplicationEvent.MyEventListener"/>
+    <bean id="myEventListener1" class="com.smartatone.testApplicationEvent.MyEventListener1"/>
+    <bean id="myEventListener2" class="com.smartatone.testApplicationEvent.MyEventListener2"/>
 
     <bean id="myEventPublisherAware" class="com.smartatone.testApplicationEvent.MyEventPublisherAware"/>
 
