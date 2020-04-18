@@ -16,6 +16,7 @@
     <modules>
         <module>smartatone-practice-spring</module>
         <module>smartatone-practice-three-party</module>
+        <module>smartatone-practice-jdk</module>
     </modules>
 
 
