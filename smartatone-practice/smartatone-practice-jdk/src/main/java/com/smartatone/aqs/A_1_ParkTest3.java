@@ -13,11 +13,11 @@ import lombok.SneakyThrows;
  * @Description: park
  * @create 2020-04-20 8:12
  **/
-public class A_1_Park implements Runnable {
+public class A_1_ParkTest3 implements Runnable {
     private Thread     next;
     private DateFormat df = new SimpleDateFormat("HH:mm:ss");
 
-    A_1_Park(Thread next) {
+    A_1_ParkTest3(Thread next) {
         this.next = next;
     }
 
@@ -31,8 +31,8 @@ public class A_1_Park implements Runnable {
      *      Thread-0 out!time=08:55:10
      */
     public static void main(String[] args) throws InterruptedException {
-        Thread t1 = new Thread(new A_1_Park(null));
-        Thread t2 = new Thread(new A_1_Park(t1));
+        Thread t1 = new Thread(new A_1_ParkTest3(null));
+        Thread t2 = new Thread(new A_1_ParkTest3(t1));
         t1.start();
         t2.start();
     }
