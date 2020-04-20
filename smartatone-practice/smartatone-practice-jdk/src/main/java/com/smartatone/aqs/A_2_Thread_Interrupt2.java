@@ -1,11 +1,11 @@
-package com.smartatone.threadPool;
+package com.smartatone.aqs;
 
 /**
  * @author xuyang001
  * @Description: interrupt
  * @create 2020-04-18 16:53
  **/
-public class A_Thread_Interrupt2 {
+public class A_2_Thread_Interrupt2 {
 
     /**
      * 

@@ -11,7 +11,7 @@ import lombok.SneakyThrows;
  * @Description: 读写锁
  * @create 2020-04-18 17:37
  **/
-public class A_1_ReentrantReadWriteLock {
+public class A_4_ReentrantReadWriteLock {
 
     private static ReentrantReadWriteLock lock = new ReentrantReadWriteLock();
 
@@ -33,7 +33,7 @@ public class A_1_ReentrantReadWriteLock {
          * 结论：
          *      读锁之间不互斥
          */
-        A_1_Read_ReadRunnble readReadRunnble = new A_1_Read_ReadRunnble(lock);
+        A_4_Read_ReadRunnble readReadRunnble = new A_4_Read_ReadRunnble(lock);
         Stream.iterate(0, i -> i + 1).limit(3).forEach(t -> {
             new Thread(readReadRunnble).start();
         });
@@ -50,17 +50,17 @@ public class A_1_ReentrantReadWriteLock {
          *  结论：
          *      写锁之间会互斥
          */
-        A_1_Read_Read_Runnble a_1_read_read_runnble = new A_1_Read_Read_Runnble(lock);
+        A_4_Read_Read_Runnble a_1_read_read_runnble = new A_4_Read_Read_Runnble(lock);
         Stream.iterate(0, i -> i + 1).limit(2).forEach(t -> {
             new Thread(a_1_read_read_runnble).start();
         });
     }
 }
 
-class A_1_Read_ReadRunnble implements Runnable {
+class A_4_Read_ReadRunnble implements Runnable {
     private ReentrantReadWriteLock lock;
 
-    A_1_Read_ReadRunnble(ReentrantReadWriteLock lock) {
+    A_4_Read_ReadRunnble(ReentrantReadWriteLock lock) {
         this.lock = lock;
     }
 
@@ -77,10 +77,10 @@ class A_1_Read_ReadRunnble implements Runnable {
     }
 }
 
-class A_1_Read_Read_Runnble implements Runnable {
+class A_4_Read_Read_Runnble implements Runnable {
     private ReentrantReadWriteLock lock;
 
-    A_1_Read_Read_Runnble(ReentrantReadWriteLock lock) {
+    A_4_Read_Read_Runnble(ReentrantReadWriteLock lock) {
         this.lock = lock;
     }
 

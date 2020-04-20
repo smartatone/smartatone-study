@@ -6,7 +6,7 @@ import java.util.stream.Stream;
 
 import lombok.SneakyThrows;
 
-public class A_2_CountDownLatch {
+public class A_5_CountDownLatch {
 
     /**
      * 执行结果:

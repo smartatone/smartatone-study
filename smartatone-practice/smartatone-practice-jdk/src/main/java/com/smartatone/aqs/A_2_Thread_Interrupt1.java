@@ -1,4 +1,4 @@
-package com.smartatone.threadPool;
+package com.smartatone.aqs;
 
 import java.util.concurrent.TimeUnit;
 
@@ -7,7 +7,7 @@ import java.util.concurrent.TimeUnit;
  * @Description: interrupt
  * @create 2020-04-18 16:53
  **/
-public class A_Thread_Interrupt1 {
+public class A_2_Thread_Interrupt1 {
 
     public static void main(String[] args) throws InterruptedException {
         Thread t = new Thread(() -> {

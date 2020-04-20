@@ -10,7 +10,7 @@ import lombok.SneakyThrows;
  * @Description: TODO
  * @create 2020-04-18 17:27
  **/
-public class A_1_ReentrantLock implements Runnable {
+public class A_3_ReentrantLock implements Runnable {
 
     ReentrantLock lock = new ReentrantLock();
 
@@ -22,7 +22,7 @@ public class A_1_ReentrantLock implements Runnable {
      * Thread-0 out
      */
     public static void main(String[] args) {
-        A_1_ReentrantLock test = new A_1_ReentrantLock();
+        A_3_ReentrantLock test = new A_3_ReentrantLock();
         new Thread(test).start();
         new Thread(test).start();
     }
